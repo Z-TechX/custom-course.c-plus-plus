@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div style="text-align: center; margin-top: 2%;">
+        <img src="assets/ZtechX-black.png" width="150">
+    </div>
+    <div class="roadmap">
+        <h1>C++</h1>
+
+        <!-- Section 1: Introduction to Python -->
+        <div class="node">
+            <h2 onclick="toggleNode('intro')">1. C++ Basics and Foundational concepts</h2>
+            <ul id="intro" class="hidden">
+                <li>
+                    <h3>1.1</h3>
+                    <ul>
+                        <li>Setting up the environment (IDE, compiler)</li>
+                        <li>Introduction to C++ syntax (variables, data types)</li>
+                        <li>Simple I/O (input/output)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>1.2</h3>
+                    <ul>
+                        <li>Basic arithmetic operators</li>
+                        <li>Control structures (if-else, switch)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>1.3 In-class Projects</h3>
+                    <ul>
+                        <li>Create a simple program to calculate the sum, average, and product of three numbers.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>1.4 Test Project (Individual)</h3>
+                    <ul>
+                        <li>Loan Eligibility Checker (input: salary, loan amount, repayment duration; output: eligible or not)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 2: Data Structures & Algorithms -->
+        <div class="node">
+            <h2 onclick="toggleNode('data_structures')">2. Loops and Arrays</h2>
+            <ul id="data_structures" class="hidden">
+                <li>
+                    <h3>2.1</h3>
+                    <ul>
+                        <li>Loops (for, while, do-while)</li>
+                        <li>Break and continue statements</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>2.2</h3>
+                    <ul>
+                        <li>Introduction to arrays</li>
+                        <li>Using loops with arrays</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <h3>2.3 In-class Project</h3>
+                    <ul>
+                        <li>Build a program to input student marks, store them in an array, and calculate the average.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Functions & Modules -->
+        <div class="node">
+            <h2 onclick="toggleNode('functions')">3. Functions</h2>
+            <ul id="functions" class="hidden">
+                <li>
+                    <h3>3.1</h3>
+                    <ul>
+                        <li>Defining and using functions</li>
+                        <li>Parameters and return types</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>3.2</h3>
+                    <ul>
+                        <li>Scope of variables</li>
+                        <li>Pass by value vs. pass by reference</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>3.3 In-class Project</h3>
+                    <ul>
+                        <li>Create a temperature converter using functions (Celsius <-> Fahrenheit).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 4: Object-Oriented Programming -->
+        <div class="node">
+            <h2 onclick="toggleNode('oop')">4. Pointers and Dynamic Memory</h2>
+            <ul id="oop" class="hidden">
+                <li>
+                    <h3>4.1</h3>
+                    <ul>
+                        <li>Introduction to pointers</li>
+                        <li>Pointer Arithmetic</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>4.2</h3>
+                    <ul>
+                        <li>Dynamic memory allocation (new, delete)</li>
+                        <li>Arrays and pointers</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>4.3 In-class Project</h3>
+                    <ul>
+                        <li>Create a program to dynamically allocate an array and perform operations like sum, min, and max.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Error Handling & File Handling -->
+        <div class="node">
+            <h2 onclick="toggleNode('error_handling')">5. Object-Oriented Programming</h2>
+            <ul id="error_handling" class="hidden">
+                <li>
+                    <h3>5.1</h3>
+                    <ul>
+                        <li>Introduction to classes and objects</li>
+                        <li>Creating and using objects</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>5.2</h3>
+                    <ul>
+                        <li>Constructors and destructors</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>5.3 In-class Project</h3>
+                    <ul>
+                        <li>Create a "Car" class with properties like brand, model, and mileage. Use it to instantiate objects and display the details.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 6: Working with Libraries -->
+        <div class="node">
+            <h2 onclick="toggleNode('libraries')">6. Inheritance</h2>
+            <ul id="libraries" class="hidden">
+                <li>
+                    <h3>6.1</h3>
+                    <ul>
+                        <li>Inheritance basics</li>
+                        <li>Access modifiers (public, private, protected)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>6.2</h3>
+                    <ul>
+                        <li>Constructor chaining in inheritance</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>6.3 In-class Project</h3>
+                    <ul>
+                        <li>Create a parent class "Vehicle" and a derived class "Bike." Show how Bike inherits Vehicle properties and methods.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 7: Introduction to Databases -->
+        <div class="node">
+            <h2 onclick="toggleNode('databases')">7. Polymorphism</h2>
+            <ul id="databases" class="hidden">
+                <li>
+                    <h3>7.1</h3>
+                    <ul>
+                        <li>Function overloading</li>
+                        <li>Operator overloading</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>7.2</h3>
+                    <ul>
+                        <li>Virtual functions and runtime polymorphism</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>7.3 In-class Project</h3>
+                    <ul>
+                        <li>Create a "Shape" class with a method to calculate the area. Derive classes like "Rectangle" and "Circle" to override the area calculation.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 8: Web Scraping & APIs -->
+        <div class="node">
+            <h2 onclick="toggleNode('web_scraping')">8. Encapsulation and Abstraction</h2>
+            <ul id="web_scraping" class="hidden">
+                <li>
+                    <h3>8.1</h3>
+                    <ul>
+                        <li>Getters and setters (encapsulation)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>8.2</h3>
+                    <ul>
+                        <li>Abstract classes and pure virtual functions</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>8.3 In-class Project</h3>
+                    <ul>
+                        <li>Create a class hierarchy for "BankAccount" with abstract functions for deposit and withdrawal.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 9: Introduction to Web Development -->
+        <div class="node">
+            <h2 onclick="toggleNode('web_development')">9. Advanced C++ Concepts</h2>
+            <ul id="web_development" class="hidden">
+                <li>
+                    <h3>9.1</h3>
+                    <ul>
+                        <li>Reading and writing files in C++</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>9.2</h3>
+                    <ul>
+                        <li>File operations (append, modify, delete)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>9.3 In-class Project</h3>
+                    <ul>
+                        <li>Build a "Student Record Manager" that allows adding, updating, and deleting student records from a file.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 10: Final Full-Stack Project -->
+        <div class="node">
+            <h2 onclick="toggleNode('final_project')">10. STL (Standard Template Library)</h2>
+            <ul id="final_project" class="hidden">
+                <li>
+                    <h3>10.1</h3>
+                    <ul>
+                        <li>Introduction to STL</li>
+                        <li>Vectors and iterators</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>10.2</h3>
+                    <ul>
+                        <li>Lists, stacks, and queues</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>10.3 In-class project:</h3>
+                    <ul>
+                        <li>Use vectors and queues to implement a simple task manager program.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Section 11: Advanced Python Concepts -->
+        <div class="node">
+            <h2 onclick="toggleNode('advanced_python')">11. Sorting and Searching Algorithms</h2>
+            <ul id="advanced_python" class="hidden">
+                <li>
+                    <h3>11.1</h3>
+                    <ul>
+                        <li>Basic sorting algorithms (bubble, selection, insertion)</li>                       
+                    </ul>
+                </li>
+                <li>
+                    <h3>11.2</h3>
+                    <ul>
+                        <li>Searching algorithms (linear, binary)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>11.3 In-class Project</h3>
+                    <ul>
+                        <li>Implement a program that sorts and searches for products in an inventory.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Additional Real-life Problem-Solving Projects -->
+        <div class="node">
+            <h2 onclick="toggleNode('real_life')">12. Recursion and Advanced Topics</h2>
+            <ul id="real_life" class="hidden">
+                <li>
+                    <h3>12.1</h3>
+                    <ul>
+                        <li>Understanding recursion</li>
+                        <li>Recursive functions vs. loops</li>                       
+                    </ul>
+                </li>
+                <li>
+                    <h3>12.2</h3>
+                    <ul>
+                        <li>Introduction to templates and template functions</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>12.3 In-class Project</h3>
+                    <ul>
+                        <li>Build a recursive program to solve the factorial and Fibonacci series.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="node">
+            <h2 onclick="toggleNode('final')">13. Final Project Brainstorming</h2>
+            <ul id="final" class="hidden">
+                <li>
+                    <h3>13.1</h3>
+                    <ul>
+                        <li>Discuss potential final project ideas</li>
+                        <li>Plan the structure and features</li>                       
+                    </ul>
+                </li>
+                <li>
+                    <h3>13.2</h3>
+                    <ul>
+                        <li>Begin working on the project</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>13.3 Final Project Example</h3>
+                    <ul>
+                        <li>Build a "Library Management System" with classes for books, members, and transactions (issue/return).</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
